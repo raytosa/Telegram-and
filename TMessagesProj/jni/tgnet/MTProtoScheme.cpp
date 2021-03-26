@@ -16,6 +16,8 @@
 #include "BuffersStorage.h"
 #include "ConnectionsManager.h"
 
+#include "My_Fn.h"
+
 TLObject *TLClassStore::TLdeserialize(NativeByteBuffer *stream, uint32_t bytes, uint32_t constructor, int32_t instanceNum, bool &error) {
     TLObject *object = nullptr;
     switch (constructor) {
